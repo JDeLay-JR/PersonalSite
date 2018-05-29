@@ -1,0 +1,33 @@
+/** empty css file for component consistency **/
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexItem {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.headshot {
+  margin-left: 3vw;
+  margin-top: 3vw;
+  max-height: 80%;
+  max-width: 80%;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 1 span 2;
+}
+
+p {
+  margin-top: 2vh;
+  margin-right: 1vw;
+}
