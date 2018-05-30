@@ -23,6 +23,7 @@ class IndexTemplate extends React.Component {
     this.state = {
       menuOpen: false
     };
+    
     this.handleOnClick = this.handleOnClick.bind(this)
     this.handleOnClose = this.handleOnClose.bind(this)
     this.openMenu = this.openMenu.bind(this)
