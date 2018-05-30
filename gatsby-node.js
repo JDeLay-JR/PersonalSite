@@ -1,6 +1,5 @@
 const path = require("path");
 const _ = require("lodash");
-const fs = require("fs");
 const webpackLodashPlugin = require("lodash-webpack-plugin");
 const siteConfig = require("./data/SiteConfig");
 const {
@@ -43,17 +42,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const postPage = path.resolve("src/templates/post.jsx");
     const tagPage = path.resolve("src/templates/tag.jsx");
     const categoryPage = path.resolve("src/templates/category.jsx");
-    const authorPage = path.resolve("src/templates/author.jsx");
-
-    if (
-      !fs.existsSync(
-        path.resolve(`content/${siteConfig.blogAuthorDir}/authors/`)
-      )
-    ) {
-      reject(
-        "The 'authors' folder is missing within the 'blogAuthorDir' folder."
-      );
-    }
 
     resolve(
       graphql(
@@ -72,7 +60,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     cover
                     date
                     category
-                    author
                   }
                   fields {
                     slug
@@ -116,8 +103,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         const tagSet = new Set();
         const tagMap = new Map();
         const categorySet = new Set();
-        const authorSet = new Set();
-        authorSet.add(siteConfig.blogAuthorId);
 
         result.data.allMarkdownRemark.edges.forEach(edge => {
           if (edge.node.frontmatter.tags) {
@@ -134,9 +119,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             categorySet.add(edge.node.frontmatter.category);
           }
 
-          if (edge.node.frontmatter.author) {
-            authorSet.add(edge.node.frontmatter.author);
-          }
         });
 
         const tagFormatter = tag => route =>
@@ -163,17 +145,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             component: categoryPage,
             context: {
               category
-            }
-          });
-        });
-
-        const authorList = Array.from(authorSet);
-        authorList.forEach(author => {
-          createPage({
-            path: `/author/${_.kebabCase(author)}/`,
-            component: authorPage,
-            context: {
-              author
             }
           });
         });

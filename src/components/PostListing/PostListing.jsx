@@ -1,32 +1,25 @@
 import React from "react";
 import Link from "gatsby-link";
 import PostTags from "../PostTags/PostTags";
-import SiteConfig from "../../../data/SiteConfig";
 import PostFormatting from "../../layouts/PostFormatting/PostFormatting";
 import PostHeader from "../../layouts/PostHeader/PostHeader";
 import PostDate from "../PostDate/PostDate";
-import AuthorModel from "../../models/author-model";
 import "./PostListing.css";
 
-const getPostList = (postEdges, authorEdges) =>
+const getPostList = (postEdges) =>
   postEdges.map(postEdge => ({
     path: postEdge.node.fields.slug,
     tags: postEdge.node.frontmatter.tags,
     cover: postEdge.node.frontmatter.cover,
     title: postEdge.node.frontmatter.title,
     date: postEdge.node.frontmatter.date,
-    author: AuthorModel.getAuthor(
-      authorEdges,
-      postEdge.node.frontmatter.author,
-      SiteConfig.blogAuthorId
-    ),
     excerpt: postEdge.node.excerpt,
     timeToRead: postEdge.node.timeToRead
   }));
 
 class PostListing extends React.Component {
   render() {
-    const postList = getPostList(this.props.postEdges, this.props.postAuthors);
+    const postList = getPostList(this.props.postEdges);
 
     return (
       <div>

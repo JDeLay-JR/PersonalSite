@@ -18,11 +18,18 @@ import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
 
 class IndexTemplate extends React.Component {
-  state = {
-    menuOpen: false
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      menuOpen: false
+    };
+    this.handleOnClick = this.handleOnClick.bind(this)
+    this.handleOnClose = this.handleOnClose.bind(this)
+    this.openMenu = this.openMenu.bind(this)
+    this.closeMenu = this.closeMenu.bind(this)
+  }
 
-  handleOnClick = evt => {
+  handleOnClick (evt) {
     evt.stopPropagation();
     if (this.state.menuOpen) {
       this.closeMenu();
@@ -31,16 +38,16 @@ class IndexTemplate extends React.Component {
     }
   };
 
-  handleOnClose = evt => {
+  handleOnClose (evt) {
     evt.stopPropagation();
     this.closeMenu();
   };
 
-  openMenu = () => {
+  openMenu () {
     this.setState({ menuOpen: true });
   };
 
-  closeMenu = () => {
+  closeMenu () {
     this.setState({ menuOpen: false });
   };
 
@@ -54,7 +61,6 @@ class IndexTemplate extends React.Component {
       prev,
       next
     } = this.props.pathContext;
-    const authorsEdges = this.props.data.authors.edges;
 
     return (
       <Drawer className="home-template" isOpen={this.state.menuOpen}>
@@ -107,7 +113,7 @@ class IndexTemplate extends React.Component {
               next={next}
             >
               {/* PostListing component renders all the posts */}
-              <PostListing postEdges={nodes} postAuthors={authorsEdges} />
+              <PostListing postEdges={nodes} />
             </PaginatedContent>
           </div>
 
@@ -121,24 +127,5 @@ class IndexTemplate extends React.Component {
     );
   }
 }
-
-/* eslint no-undef: "off" */
-export const pageQuery = graphql`
-  query IndexQuery {
-    # posts data comes from the context
-    # authors
-    authors: allAuthorsJson {
-      edges {
-        node {
-          id
-          name
-          image
-          url
-          bio
-        }
-      }
-    }
-  }
-`;
 
 export default IndexTemplate;

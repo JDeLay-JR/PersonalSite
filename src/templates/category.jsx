@@ -7,13 +7,12 @@ class CategoryTemplate extends React.Component {
   render() {
     const category = this.props.pathContext.category;
     const postEdges = this.props.data.allMarkdownRemark.edges;
-    const authorsEdges = this.props.data.authors.edges;
     return (
       <div className="category-container">
         <Helmet
           title={`Posts in category "${category}" | ${config.siteTitle}`}
         />
-        <PostListing postEdges={postEdges} postAuthors={authorsEdges} />
+        <PostListing postEdges={postEdges} />
       </div>
     );
   }
@@ -41,18 +40,6 @@ export const pageQuery = graphql`
             cover
             date
           }
-        }
-      }
-    }
-    # authors
-    authors: allAuthorsJson {
-      edges {
-        node {
-          id
-          name
-          image
-          url
-          bio
         }
       }
     }

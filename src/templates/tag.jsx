@@ -52,7 +52,7 @@ class TagTemplate extends React.Component {
       prev,
       next
     } = this.props.pathContext;
-    const authorsEdges = this.props.data.authors.edges;
+
     return (
       <Drawer isOpen={this.state.menuOpen}>
         <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
@@ -90,7 +90,7 @@ class TagTemplate extends React.Component {
               next={next}
             >
               {/* PostListing component renders all the posts */}
-              <PostListing postEdges={nodes} postAuthors={authorsEdges} />
+              <PostListing postEdges={nodes} />
             </PaginatedContent>
           </div>
           {/* The tiny footer at the very bottom */}
@@ -126,18 +126,6 @@ export const pageQuery = graphql`
             cover
             date
           }
-        }
-      }
-    }
-    # authors
-    authors: allAuthorsJson {
-      edges {
-        node {
-          id
-          name
-          image
-          url
-          bio
         }
       }
     }

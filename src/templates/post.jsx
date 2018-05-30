@@ -140,7 +140,6 @@ export const pageQuery = graphql`
         date
         category
         tags
-        author
       }
       fields {
         slug
@@ -168,18 +167,6 @@ export const pageQuery = graphql`
       }
       fields {
         slug
-      }
-    }
-    # authors
-    authors: allAuthorsJson {
-      edges {
-        node {
-          id
-          name
-          image
-          url
-          bio
-        }
       }
     }
   }

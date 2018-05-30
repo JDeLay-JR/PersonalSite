@@ -12,7 +12,6 @@ module.exports = {
       title: config.siteTitle,
       description: config.siteDescription,
       image_url: `${config.siteUrl + pathPrefix}/logos/logo-512.png`,
-      author: config.siteRssAuthor,
       copyright: `${config.copyright.label} © ${config.copyright.year ||
         new Date().getFullYear()}`
     }
@@ -24,13 +23,6 @@ module.exports = {
       options: {
         name: "posts",
         path: `${__dirname}/content/${config.blogPostDir}`
-      }
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "authors",
-        path: `${__dirname}/content/${config.blogAuthorDir}`
       }
     },
     "gatsby-transformer-json",
@@ -112,8 +104,7 @@ module.exports = {
                 feed_url
                 title
                 description
-                image_url
-                author
+                image_url 
                 copyright
               }
             }
@@ -129,7 +120,6 @@ module.exports = {
                 date: edge.node.frontmatter.date,
                 title: edge.node.frontmatter.title,
                 description: edge.node.excerpt,
-                author: rssMetadata.author,
                 url: rssMetadata.site_url + edge.node.fields.slug,
                 guid: rssMetadata.site_url + edge.node.fields.slug,
                 custom_elements: [{ "content:encoded": edge.node.html }]
@@ -153,7 +143,6 @@ module.exports = {
                       date
                       category
                       tags
-                      author
                     }
                   }
                 }
