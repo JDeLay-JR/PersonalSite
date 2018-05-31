@@ -10,7 +10,7 @@ module.exports = {
     "Full Stack Software Engineer", // Website description used for RSS feeds/meta description tag.
   siteCover:
     "https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-0.3.5&s=db802b72adc82f97904d37dde9d0d401&auto=format&fit=crop&w=889&q=80", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  siteNavigation: true, // If navigation is enabled the Menu button will be visible
+  siteNavigation: false, // If navigation is enabled the Menu button will be visible
   siteRss: "/rss.xml", // Path to the RSS file.
   sitePaginationLimit: 10, // The max number of posts per page.
   googleAnalyticsID: "UA-111982167-1", // GA tracking ID.
