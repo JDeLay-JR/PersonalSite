@@ -10,7 +10,9 @@ class Navigation extends Component {
         <Link to="/">
           <img className="navbarImage" src={config.siteLogo} alt="" />
         </Link>
-        <button className="navbarButton">Button</button>
+        <button className="navbarButton">Linked In</button>
+        <button className="navbarButton">GitHub</button>
+        <button className="navbarButton">Contact</button>
       </div>
     );
   }

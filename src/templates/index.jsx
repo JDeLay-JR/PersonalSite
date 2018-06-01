@@ -16,6 +16,8 @@ import PageTitle from "../components/PageTitle/PageTitle";
 import PageDescription from "../components/PageDescription/PageDescription";
 import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
+import LandingPage from "../components/LandingPage/LandingPage";
+import MainContent from "../layouts/MainContent/MainContent";
 
 class IndexTemplate extends React.Component {
   constructor(props) {
@@ -105,17 +107,19 @@ class IndexTemplate extends React.Component {
               </Link>
             </MainHeader>
 
-            <PaginatedContent
+              <LandingPage />
+              {/* <PaginatedContent
               page={page}
               pages={pages}
               total={total}
               limit={limit}
               prev={prev}
               next={next}
-            >
+            > */}
               {/* PostListing component renders all the posts */}
-              <PostListing postEdges={nodes} />
-            </PaginatedContent>
+              {/* <PostListing postEdges={nodes} /> */}
+            {/* </PaginatedContent> */}
+
           </div>
 
           {/* The tiny footer at the very bottom */}
