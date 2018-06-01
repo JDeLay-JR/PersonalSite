@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link } from "react-scroll";
-import PostListing from "../components/PostListing/PostListing";
+// import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import Drawer from "../layouts/Drawer/Drawer";
@@ -14,10 +14,9 @@ import BlogLogo from "../components/BlogLogo/BlogLogo";
 import MenuButton from "../components/MenuButton/MenuButton";
 import PageTitle from "../components/PageTitle/PageTitle";
 import PageDescription from "../components/PageDescription/PageDescription";
-import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
+// import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
-import LandingPage from "../components/LandingPage/LandingPage";
-import MainContent from "../layouts/MainContent/MainContent";
+import LandingPage from "../layouts/LandingPage/LandingPage";
 
 class IndexTemplate extends React.Component {
   constructor(props) {
@@ -57,12 +56,12 @@ class IndexTemplate extends React.Component {
   render() {
     const {
       nodes,
-      page,
-      pages,
-      total,
-      limit,
-      prev,
-      next
+      // page,
+      // pages,
+      // total,
+      // limit,
+      // prev,
+      // next
     } = this.props.pathContext;
 
     return (
@@ -107,17 +106,17 @@ class IndexTemplate extends React.Component {
               </Link>
             </MainHeader>
 
-              <LandingPage />
-              {/* <PaginatedContent
-              page={page}
-              pages={pages}
-              total={total}
-              limit={limit}
-              prev={prev}
-              next={next}
-            > */}
-              {/* PostListing component renders all the posts */}
-              {/* <PostListing postEdges={nodes} /> */}
+            <LandingPage />
+            {/* <PaginatedContent
+            page={page}
+            pages={pages}
+            total={total}
+            limit={limit}
+            prev={prev}
+            next={next}
+          > */}
+            {/* PostListing component renders all the posts */}
+            {/* <PostListing postEdges={nodes} /> */}
             {/* </PaginatedContent> */}
 
           </div>
