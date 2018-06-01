@@ -3,7 +3,7 @@ module.exports = {
   siteTitle: "James DeLay", // Site title.
   siteTitleAlt: "Full Stack Software Engineer", // Alternative site title for SEO.
   siteLogo:
-    "https://haysclark.github.io/gatsby-starter-casper/logos/logo-1024.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
+    "http://www.clker.com/cliparts/z/5/w/w/C/q/white-letter-j-md.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: "https://haysclark.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-starter-casper", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription:
