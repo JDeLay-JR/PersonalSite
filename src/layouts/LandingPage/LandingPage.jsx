@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import tinkle from "../../../public/images/tinkle.png"
 import scrappr from "../../../public/images/scrappr.png"
+import me from "../../../public/images/about-me.jpg"
+import blog from "../../../public/images/blog.png"
 import config from "../../../data/SiteConfig"
 import MainContent from "../../layouts/MainContent/MainContent"
 import "./LandingPage.css"
@@ -15,7 +17,7 @@ class LandingPage extends Component {
             <img src={config.siteCover} className="img" alt="logo" />
           </div>
           <div className="landingPageComponent">
-            <p>About Me</p>
+            <img src={me} className="img" alt="me" />
           </div>
           <div className="landingPageComponent">
             <img src={tinkle} className="img" alt="tinkle" />
@@ -24,7 +26,7 @@ class LandingPage extends Component {
             <p>Project: SBM</p>
           </div>
           <div className="landingPageComponent">
-            <p>Tech Blog</p>
+            <img src={blog} className="img" alt="blog" />
           </div>
           <div className="landingPageComponent">
             <img src={scrappr} className="img" alt="scrappr" />
