@@ -1,5 +1,5 @@
 module.exports = {
-  resume: "https://drive.google.com/file/d/1qLriA5FFetqjXfk-6mTthCc_UbX-p-6C/view?usp=sharing",
+  resume: "https://www.dropbox.com/s/t003w6bv3o4w9t9/JamesDeLay_Resume.pdf?dl=0",
   github: "https://github.com/JDeLay-JR",
   linkedin: "https://linkedin.com/in/jdelayjr",
   blogPostDir: "posts", // The name of directory that contains your posts.
@@ -21,7 +21,7 @@ module.exports = {
   siteSocialUrls: [
     "https://github.com/JDeLay-JR",
     "https://www.linkedin.com/in/jdelayjr/",
-    "https://drive.google.com/file/d/1qLriA5FFetqjXfk-6mTthCc_UbX-p-6C/view?usp=sharing",
+    "https://www.dropbox.com/s/t003w6bv3o4w9t9/JamesDeLay_Resume.pdf?dl=0",
     "mailto:jdelay.jr@gmail.com"
   ],
   postDefaultCategoryID: "Tech", // Default category for posts.
