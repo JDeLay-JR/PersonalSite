@@ -1,4 +1,7 @@
 module.exports = {
+  resume: "https://drive.google.com/file/d/1qLriA5FFetqjXfk-6mTthCc_UbX-p-6C/view?usp=sharing",
+  github: "https://github.com/JDeLay-JR",
+  linkedin: "https://linkedin.com/in/jdelayjr",
   blogPostDir: "posts", // The name of directory that contains your posts.
   siteTitle: "James DeLay", // Site title.
   siteTitleAlt: "Full Stack Software Engineer", // Alternative site title for SEO.
@@ -18,6 +21,7 @@ module.exports = {
   siteSocialUrls: [
     "https://github.com/JDeLay-JR",
     "https://www.linkedin.com/in/jdelayjr/",
+    "https://drive.google.com/file/d/1qLriA5FFetqjXfk-6mTthCc_UbX-p-6C/view?usp=sharing",
     "mailto:jdelay.jr@gmail.com"
   ],
   postDefaultCategoryID: "Tech", // Default category for posts.
@@ -25,7 +29,7 @@ module.exports = {
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/haysclark/gatsby-starter-casper",
+      url: "https://github.com/JDeLay-JR",
       iconClassName: "fa fa-github" // Disabled, see Navigation.jsx
     },
     {
@@ -37,6 +41,11 @@ module.exports = {
       label: "Email",
       url: "mailto:jdelay.jr@gmail.com",
       iconClassName: "fa fa-envelope" // Disabled, see Navigation.jsx
+    },
+    {
+      label: "Resume",
+      url: "https://drive.google.com/file/d/1qLriA5FFetqjXfk-6mTthCc_UbX-p-6C/view?usp=sharing",
+      iconClassName: "fa fa-file-pdf-o"
     }
   ],
   // Copyright string for the footer of the website and RSS feed.

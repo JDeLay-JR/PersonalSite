@@ -1,3 +1,42 @@
+/* Navbar */
+.navbarContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    height: 6vh;
+    background-color: #c4c4c4;
+    box-shadow: 0px 3px 20px -3px #272727;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .navbarButtonContainer {
+      display: flex;
+      justify-content: flex-end;
+      align-content: center;
+    }
+  
+  .navbarImage {
+      align-self: center;
+      margin-left: 1vw;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+      height: 5vh;
+      width: 3.5vw;
+  }
+  
+  .navbarButton {
+      width: 7vw;
+      height: 4vh;
+      align-self: center;
+      background-color: #c4c4c4;
+      border: none;
+  }
+
+  .navbarButton:hover {
+    background-color: #272727
+}
+
+
 /* Navigation */
 .nav-opened .nav-cover {
     position: fixed;
@@ -6,28 +45,6 @@
     right: 240px;
     bottom: 0;
     z-index: 10;
-}
-.navbarContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #800e0e;
-}
-
-.navbarImage {
-    align-self: center;
-    justify-self: start;
-    margin-left: 1vw;
-    margin-top: 1vh;
-    height: 7vh;
-    width: 5vw;
-}
-
-.navbarButton {
-    width: 7vw;
-    height: 4vh;
-    margin-right: 1vw;
-    justify-self: end;
-    align-self: center;
 }
 
 .nav {

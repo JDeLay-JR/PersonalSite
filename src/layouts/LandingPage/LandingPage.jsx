@@ -21,7 +21,7 @@ class LandingPage extends Component {
             <img src={aboutMe} className="img" alt="me" />
           </div>
           <div className="landingPageComponent">
-            <Link to='/tinkle'><img src={tinkle} className="img" alt="tinkle" /></Link>
+            <Link to='/tinkle' className="img"><img src={tinkle} className="img" alt="tinkle" /></Link>
           </div>
           <div className="landingPageComponent">
             <p>Project: SBM</p>
