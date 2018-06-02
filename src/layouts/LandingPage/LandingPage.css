@@ -1,22 +1,14 @@
-.landingPageContainer {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.landingPageSubContainer {
+
+.landingPageContainer {
     margin-left: 1vw;
     margin-right: 1vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-gap: 1em;
-    width: 50vw;
-    height: 50vh;
+    height: 70vh;
+    align-content: center;
+    justify-content: center;
 }
 
 .landingPageComponent{
@@ -26,34 +18,6 @@
     align-items: center;  
     box-shadow: 1px 1px 1px 1px black;
     background-color: #ffffff;
-}
-
-#sbm {
-    background-color: rgb(200, 201, 196)
-}
-
-#aboutMe{
-    background-color: rgb(145, 145, 241);
-}
-
-#personalSite {
-    background-color: rgb(68, 133, 219);
-}
-
-#blog {
-    background-color: rgb(240, 210, 39);
-}
-
-#tinkle {
-    background-color: rgb(11, 175, 25);
-}
-
-#scrappr {
-    background-color: rgb(194, 4, 4);
-}
-
-.img {
-    width: 100%;
-    height: 100%;
+    height: 40vh;
 }
 
