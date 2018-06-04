@@ -17,6 +17,7 @@ import PageDescription from "../components/PageDescription/PageDescription";
 // import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
 import LandingPage from "../layouts/LandingPage/LandingPage";
+import Tinkle from "../pages/tinkle";
 
 class IndexTemplate extends React.Component {
   constructor(props) {
@@ -107,6 +108,7 @@ class IndexTemplate extends React.Component {
             </MainHeader>
 
             <LandingPage />
+            <Tinkle className="hidden" />
             {/* <PaginatedContent
             page={page}
             pages={pages}

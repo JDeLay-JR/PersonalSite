@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
-    height: 70vh;
+    height: 80vh;
     align-content: center;
     justify-content: center;
 }
@@ -18,10 +18,19 @@
     align-items: center;  
     box-shadow: 1px 1px 15px 1px #272727;
     background-color: #ffffff;
-    height: 40vh;
+    height: 37vh;
 }
 
 .landingPageComponent:hover {
     box-shadow: 1px 10px 40px 5px #272727;
 }
 
+#tinkleImg {
+    width: 100%;
+    height: 100%;
+}
+
+#scrapprImg {
+    width: 100%;
+    height: 100%;
+}

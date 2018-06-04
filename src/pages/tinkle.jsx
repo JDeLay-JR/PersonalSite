@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import NavBar from "../components/Navigation/NavBar"
+// import NavBar from "../components/Navigation/NavBar"
 // import Link from "gatsby-link";
 
 class Tinkle extends Component {
   render() {
         return (
-          <div>
-            <NavBar />
+          <div className="tinkleContainer">
             <p>Tinkle!</p>
           </div>
         )
