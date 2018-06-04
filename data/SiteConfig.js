@@ -2,6 +2,9 @@ module.exports = {
   resume: "https://www.dropbox.com/s/t003w6bv3o4w9t9/JamesDeLay_Resume.pdf?dl=0",
   github: "https://github.com/JDeLay-JR",
   linkedin: "https://linkedin.com/in/jdelayjr",
+  tinkleSite: "https://github.com/akramer24/tinkle",
+  sbmSite: "https://github.com/JDeLay-JR/Business-Alert-System",
+  scrapprSite: "https://github.com/ScrapprApp/Scrapbooker",
   blogPostDir: "posts", // The name of directory that contains your posts.
   siteTitle: "James DeLay", // Site title.
   siteTitleAlt: "Full Stack Software Engineer", // Alternative site title for SEO.
