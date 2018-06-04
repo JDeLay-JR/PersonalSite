@@ -7,17 +7,34 @@ import "./LandingPage.css"
 
 class LandingPage extends Component {
   render() {
+    const navigate = target => {
+      window.location.href = target
+    }
+
     return (  
       <MainContent>
         <div className="landingPageContainer">
           <div id="tinkle" className="landingPageComponent">
             <img id="tinkleImg" src={tinkle} alt="tinkle" />
+            <div className="overlay" />
+            <div className="buttonContainer">
+              <button onClick={() => navigate(config.tinkleSite)}>View the Code</button>
+              <button onClick={() => navigate(config.tinkleSite)}>Project Description</button>
+            </div>
           </div>
-          <div id="sbm" onClick={() => window.location.href=`${config.sbmSite}` } className="landingPageComponent">
-            SBM
+          <div id="sbm" className="landingPageComponent">
+            <div className="buttonContainer">
+              <button onClick={() => navigate(config.sbmSite)}>View the Code</button>
+              <button onClick={() => navigate(config.tinkleSite)}>Project Description</button>
+            </div>
           </div>
-          <div id="scrappr" onClick={() => window.location.href=`${config.scrapprSite}` } className="landingPageComponent">
+          <div id="scrappr" className="landingPageComponent">
             <img id="scrapprImg" src={scrappr} alt="scrappr" />
+            <div className="overlay" />
+            <div className="buttonContainer">
+              <button onClick={() => navigate(config.scrapprSite)}>View the Code</button>
+              <button onClick={() => navigate(config.tinkleSite)}>Project Description</button>
+            </div>
           </div>
         </div>
       </MainContent>

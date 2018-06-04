@@ -25,6 +25,47 @@
     cursor: pointer;
 }
 
+.landingPageComponent:hover  > .overlay {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.425);
+    z-index: 50;
+    display: block; 
+}
+
+
+.landingPageComponent div.buttonContainer {
+    position:absolute;
+    display:none;
+    z-index: 100;
+}
+
+.landingPageComponent:hover div.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    -webkit-animation: fade-in-down 0.6s;
+    animation: fade-in-down 0.6s both;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+button {
+    background-color: #F1F0F0;
+    color: #272727;
+    margin-top: 1vh;
+    
+}
+
+
+button:hover {
+    background-color: #ce5959;
+    color: #ffffff;
+}
+
+
 #tinkleImg {
     width: 100%;
     height: 100%;
