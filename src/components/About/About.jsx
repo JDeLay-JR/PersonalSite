@@ -20,6 +20,10 @@ class About extends Component {
             <p >
               <strong id="skillsBold">Technical Skills:</strong> JavaScript, Node, Express, Sequelize, React, Redux, Git, Github, HTML, React Native, PostgreSQL, Mocha, Jasmine, Chai, Bootstrap, Socket.io, Google Firebase, Twillio, CSS
             </p>
+            <div className="flexRow">
+              <p><strong>Email:</strong> jdelay.jr@gmail.com</p>
+              <p><strong>Phone:</strong> 516-458-0715</p>
+            </div>
           </div>
         </div>
         <MainContent />
