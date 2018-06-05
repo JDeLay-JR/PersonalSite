@@ -1,14 +1,27 @@
 /** empty css file for component consistency **/
 
+.about {
+  height: 60vh;
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
+  width: 99vw;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+}
+
+.gridContainer h2, h3{
+  text-decoration-line: underline;
 }
 
 .flexContainer {
   display: flex;
   flex-direction: column;
+  margin-right: 1vw;
+  width: 67vw;
 }
 
 .flexItem {
@@ -20,14 +33,20 @@
 .headshot {
   margin-left: 3vw;
   margin-top: 3vw;
-  max-height: 80%;
-  max-width: 80%;
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-row-end: 1 span 2;
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: 0px 0px 21px 3px #272727;
 }
 
 p {
   margin-top: 2vh;
   margin-right: 1vw;
+}
+
+#about {
+  text-indent: 25px;
+}
+
+.gridContainer h1 {
+  text-decoration-line: underline;
 }

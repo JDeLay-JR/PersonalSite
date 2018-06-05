@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
-    height: 80vh;
+    height: 50vh;
     align-content: center;
     justify-content: center;
 }
@@ -53,8 +53,8 @@
 }
 
 button {
-    background-color: #F1F0F0;
-    color: #272727;
+    background-color: rgb(43, 43, 43);
+    color: #ffffff;
     margin-top: 2vh;
     
 }

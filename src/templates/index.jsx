@@ -17,6 +17,7 @@ import PageDescription from "../components/PageDescription/PageDescription";
 // import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
 import LandingPage from "../layouts/LandingPage/LandingPage";
+import About from "../components/About/About";
 
 class IndexTemplate extends React.Component {
   constructor(props) {
@@ -105,7 +106,8 @@ class IndexTemplate extends React.Component {
                 <span className="hidden">Scroll Down</span>
               </Link>
             </MainHeader>
-
+            <About />
+            <center><h1>Personal Projects</h1></center>
             <LandingPage />
             
             {/* <PaginatedContent

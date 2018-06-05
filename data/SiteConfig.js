@@ -22,9 +22,10 @@ module.exports = {
   googleAnalyticsID: "UA-111982167-1", // GA tracking ID.
   // disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // enables Disqus comments, visually deviates from original Casper theme.
   siteSocialUrls: [
+    "https://www.dropbox.com/s/t003w6bv3o4w9t9/JamesDeLay_Resume.pdf?dl=0",
     "https://github.com/JDeLay-JR",
     "https://www.linkedin.com/in/jdelayjr/",
-    "https://www.dropbox.com/s/t003w6bv3o4w9t9/JamesDeLay_Resume.pdf?dl=0",
+    "https://medium.com/@jdelay.jr",
     "mailto:jdelay.jr@gmail.com"
   ],
   postDefaultCategoryID: "Tech", // Default category for posts.
@@ -59,4 +60,10 @@ module.exports = {
   },
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0", // Used for setting manifest background color.
+  aboutMe: `While I was pursuing my M.B.A at Adelphi University I was working as a carpenter. 
+            I quickly realized that I loved to build and create things as well as come up with innovative solutions for complex problems.
+            I decided to combine this creative passion with my other passion: technology. 
+            This led me to The Fullstack Academy of Code where I studied software engineering & web development. 
+            I am extremely fascinated by front end development. 
+            I love creating dynamic and interactive webpages and designing UI and UX.`
 };
