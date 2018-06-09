@@ -66,12 +66,7 @@ button:hover {
 }
 
 
-#tinkleImg {
-    width: 100%;
-    height: 100%;
-}
-
-#scrapprImg {
+#tinkleImg, #sbmImg, #scrapprImg{
     width: 100%;
     height: 100%;
 }
