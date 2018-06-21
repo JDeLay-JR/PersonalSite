@@ -10,15 +10,19 @@ class About extends Component {
       <div className="about gridContainer">
         <MainContent />
         <div className="about gridContainer">
-          <img src={headshot} className='headshot' alt='James DeLay' />
+          <div id='header'>
+            <h1 className="flexItem">James DeLay</h1>
+            <h2 className="flexItem">Full Stack Software Engineer</h2>
+          </div>
+          <div className="headshot">
+            <img src={headshot} id='headshot' alt='James DeLay' />
+          </div>
           <div className="aboutHeader flexContainer">
-            <h2 className="flexItem">James DeLay</h2>
-            <h3 className="flexItem">Fullstack Software Engineer</h3>
             <p id="about">
               {config.aboutMe}
             </p>
-            <p >
-              <strong id="skillsBold">Technical Skills:</strong> JavaScript, Node, Express, Sequelize, React, Redux, Git, Github, HTML, React Native, PostgreSQL, Mocha, Jasmine, Chai, Bootstrap, Socket.io, Google Firebase, Twillio, CSS
+            <p>
+              <strong id="skillsBold">Technical Skills:</strong> JavaScript, Node.js, Express.js, Sequelize.js, React, React Native, Redux, Git, Github, HTML, PostgreSQL, Mocha, Jasmine, Chai, Socket.io, Google Firebase, Twilio, CSS
             </p>
             <div className="flexRow">
               <p><strong>Email:</strong> jdelay.jr@gmail.com</p>

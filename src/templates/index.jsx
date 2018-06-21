@@ -107,7 +107,6 @@ class IndexTemplate extends React.Component {
               </Link>
             </MainHeader>
             <About />
-            <center><h1>Personal Projects</h1></center>
             <LandingPage />
             
             {/* <PaginatedContent
