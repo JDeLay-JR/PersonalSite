@@ -60,7 +60,7 @@ module.exports = {
   },
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0", // Used for setting manifest background color.
-  aboutMe: `While I was pursuing my M.B.A at Adelphi University I was working as a carpenter. 
+  aboutMe: `While I was pursuing my MBA at Adelphi University I was working as a carpenter. 
             I quickly realized that I loved to build and create things as well as come up with innovative solutions for complex problems.
             I decided to combine this creative passion with my other passion: technology. 
             This led me to The Fullstack Academy of Code where I studied software engineering & web development. 
